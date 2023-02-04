@@ -15,15 +15,15 @@ const NavBar=() =>{
 
                 <div className="menu-link">
                     <ul>
-                        <li><NavLink exact activeClassName="active" to ='/'>Home</NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/services'>Services</NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/about' >About</NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/contact'>Contact</NavLink> </li>
+                        <li><NavLink exact activeClassName="active" to ='/' className="menuNavLink">         <Button>  Home     </Button></NavLink></li>
+                        <li><NavLink exact activeClassName="active" to='/services' className="menuNavLink">  <Button>  Services </Button></NavLink></li>
+                        <li><NavLink exact activeClassName="active" to='/about'  className="menuNavLink">    <Button>  About    </Button></NavLink></li>
+                        <li><NavLink exact activeClassName="active" to='/contact' className="menuNavLink">   <Button>  Contact  </Button></NavLink></li>
                     </ul>  
                 </div>
                 <div className="affiliated">
                     <ul >
-                        <li><Button variant="contained">Join Affiliate</Button></li>
+                        <li><Button variant="contained" >Join Affiliate</Button></li>
                     </ul>
                 </div>
 
