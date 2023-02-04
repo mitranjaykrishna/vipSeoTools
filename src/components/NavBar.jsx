@@ -1,9 +1,10 @@
 import React from "react";
-import Logo from "../images/logo.png";
+
 import { NavLink } from "react-router-dom";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
+import "../styles/NavBar.css"
 
 
 
@@ -12,7 +13,7 @@ const NavBar=() =>{
         <>
             <nav className="main_nav">
                 <div className="logo">
-                    <NavLink to="/"><img src={Logo} alt="Logo" /> </NavLink>
+                    <NavLink to="/"><img src={"./images/logo.png"} alt="Logo" /> </NavLink>
                 </div>
 
                 <div className="menu-link">
