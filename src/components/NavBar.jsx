@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../images/logo.png";
 import { NavLink } from "react-router-dom";
 import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/material/Box';
 
 
 
@@ -23,7 +25,15 @@ const NavBar=() =>{
                 </div>
                 <div className="affiliated">
                     <ul >
-                        <li><Button variant="contained" >Join Affiliate</Button></li>
+                        <li>
+                            <Box>
+                                <ButtonGroup variant="outlined" aria-label="outlined button group" className="affiButtonG">
+                                    <Button><b>Login</b></Button>
+                                    <Button><b>register</b></Button> 
+                                    <Button variant="contained" ><b>Join Affiliate</b></Button>       
+                                </ButtonGroup>
+                            </Box>
+                        </li>
                     </ul>
                 </div>
 
