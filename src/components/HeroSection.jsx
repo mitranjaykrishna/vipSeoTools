@@ -63,6 +63,7 @@ const Wrapper= styled.section `
     color: rgb(71, 209, 240);
     text-decoration: underline;
     transform: scale(0.96);
+    transition: 0.3s ease-in-out;
 }
 
 
