@@ -95,7 +95,7 @@ const Wrapper= styled.section `
     }
 
     .fluidAnim{
-        animation: MoveUpDown 5s ease-in-out infinite alternate-reverse both;
+        animation: MoveUpDown 8s ease-in-out infinite alternate-reverse both;
     }
 
     @keyframes MoveUpDown {
