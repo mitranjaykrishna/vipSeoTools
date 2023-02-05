@@ -18,17 +18,17 @@ const NavBar=() =>{
 
                 <div className="menu-link">
                     <ul>
-                        <li><NavLink exact activeClassName="active" to ='/' className="menuNavLink">         <Button>  Home     </Button></NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/services' className="menuNavLink">  <Button>  Services </Button></NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/about'  className="menuNavLink">    <Button>  About    </Button></NavLink></li>
-                        <li><NavLink exact activeClassName="active" to='/contact' className="menuNavLink">   <Button>  Contact  </Button></NavLink></li>
+                        <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to ='/' >           Home     </NavLink></Button></li>
+                        <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to='/services' >    Services </NavLink></Button></li>
+                        <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to='/about'  >      About    </NavLink></Button></li>
+                        <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to='/contact' >     Contact  </NavLink></Button></li>
                     </ul>  
                 </div>
                 <div className="affiliated">
                     <ul >
                         <li>
                             <Box>
-                                <ButtonGroup variant="outlined" aria-label="outlined button group" className="affiButtonG">
+                                <ButtonGroup variant="outlined" aria-label="outlined button group" className="affiButtonG buttonEffect">
                                     <Button><b>Login</b></Button>
                                     <Button><b>register</b></Button> 
                                     <Button variant="contained" ><b>Join Affiliate</b></Button>       
