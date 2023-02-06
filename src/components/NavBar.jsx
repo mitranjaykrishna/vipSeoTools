@@ -29,8 +29,8 @@ const NavBar=() =>{
                         <li>
                             <Box>
                                 <ButtonGroup variant="outlined" aria-label="outlined button group" className="affiButtonG buttonEffect">
-                                    <Button><b>Login</b></Button>
-                                    <Button><b>register</b></Button> 
+                                    <Button><a href="https://access.vipseotools.com/login"><b>Login</b></a></Button>
+                                    <Button><a href="https://access.vipseotools.com/signup"><b>register</b></a></Button> 
                                     <Button variant="contained" ><b>Join Affiliate</b></Button>       
                                 </ButtonGroup>
                             </Box>

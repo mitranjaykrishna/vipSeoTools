@@ -10,7 +10,7 @@ a{
 
 
 a:link, a:visited{
-    color: black;
+    color: #0081C9;
 }
 
 
@@ -57,7 +57,7 @@ a:link, a:visited{
 }
 
 .menu-link li a.active{
-    color: darkblue;
+    color: rgb(71, 209, 240);
 }
 
 .buttonEffect :hover{

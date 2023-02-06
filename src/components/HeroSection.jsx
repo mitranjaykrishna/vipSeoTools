@@ -3,29 +3,35 @@ import Button from '@mui/material/Button';
 import styled from "styled-components";
 import { Box } from "@mui/system";
 import { ButtonGroup } from "@mui/material";
+import { useGlobalContext } from "../context";
 
 const HeroSection=() =>
 {
+
+    const {heroTopData,logoImage,heroPara,groupButton1,groupButton2,pageImage}=useGlobalContext();
+    // console.log(name);
+
     return (
         <>
             <Wrapper>
                 <div className="container grid grid-two-column">
                     <div className="section-hero-data">
-                        <p className="hero-top-data">We are</p>
-                        {/* <h1 className="hero-heading">VIPSEOTOOLS</h1> */}
-                        <img src={"./images/logo.png"} alt="Logo" />
-                        <p className="hero-para">Best, Reliable Group Buy Services</p>
+                        <p className="hero-top-data"><b>{heroTopData}</b></p>
+                        <h1 className="hero-heading">
+                            <img src={logoImage} alt="Logo" /> 
+                        </h1>
+                        <p className="hero-para">{heroPara}</p>
                         <Box>
                             <ButtonGroup variant="outlined" aria-label="outlined button group" className="buttonEffect">
-                                <Button className="btn logReg "><b>Login</b></Button>
-                                <Button className="btn logReg" variant="contained"><b>register</b></Button>
+                                <Button className="btn logReg "><b>{groupButton1}</b></Button>
+                                <Button className="btn logReg" variant="contained"><b>{groupButton2}</b></Button>
                             </ButtonGroup>
                         </Box>
                     </div>
 
                     <div className="section-hero-image">
                     <picture>
-                        <img src="./images/hero.svg" alt="" className="hero-img fluidAnim" />
+                        <img src={pageImage} alt="" className="hero-img fluidAnim" />
                     </picture>
                     </div>
                 </div>
@@ -45,7 +51,7 @@ const Wrapper= styled.section `
         
     }
 
-    .section-hero-data img{
+    .hero-heading img{
         height: 15rem;
         width: 100%
     }
