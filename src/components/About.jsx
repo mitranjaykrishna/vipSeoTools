@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 const About=() =>{
     const { updateAboutPage }=useGlobalContext();
-    useEffect(() => updateAboutPage(),[]);
+    useEffect(() => updateAboutPage());
     return (
         <>
             <HeroSection/>         

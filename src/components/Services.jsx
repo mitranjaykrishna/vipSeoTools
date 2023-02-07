@@ -24,12 +24,13 @@ const Services=() =>{
                             return(
                                 <div key={id} className="card">
                                     <figure>
-                                        <img src={image} alt={title} />
+                                        {/* <img src={image} alt={title} /> */}
+                                        <h1>{image}</h1>
                                     </figure>
                                     <div className="card-data">
                                         <h3>{title}</h3>
                                         <p>{description}</p>
-                                        <Button className="btn">Read more</Button>
+                                        <Button className="btn">Subscribe</Button>
                                     </div>
                                 </div>
                             );

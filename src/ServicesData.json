@@ -1,16 +1,23 @@
 [
     {
         "id":1,
-        "title": "SpyFu",
-        "image": "./images/SpyFu.svg",
-        "description": "SpyFu is a competitive intelligence tool for SEO and PPC. You can type in a domain to see all of the keywords it ranks for (including the content that ranks), the ads it buys on Google, and its strongest competitors. You can also do deep keyword research."
+        "title": "All in One Plan",
+        "image": "$25.00/m",
+        "description": "Lite + Spyfu, Spin Rewriter, Wordai, Quetext, stock, storyblocks, buzzsumo, majestic, vyond, placeit, envato elements, wordtune, rytr,KeywordTool.io, Woorank, Wordhero, spamzilla.io, Quillbot, Helium10, JS, Scalenut, Indexification and Invideo"
     },
 
     {
         "id":2,
-        "title": "WordAi",
-        "image": "./images/wordai.png",
-        "description": "Use artificial intelligence to cut turnaround time, extend your budget, and create more high-quality content that Google and readers will love."
+        "title": "Lite Plan",
+        "image": "$10.00/m",
+        "description": "Semrush, Longtail pro and keyword reseracher, Storybase, Moz, Keyword Revealer, Grammarly, Canva, Ubersuggest, Crello, Picmonkey, Skillshare, Prime and Netflix"
+    },
+
+    {
+        "id":3,
+        "title": "Writer's Plan",
+        "image": "$25.00/m",
+        "description": "Copymatic, Rytr, Wordhero, Wordai, Spinrewriter, Quillbot, Grammarly, WordTune, Scalenut, Closerscopy, CreatorAi and Quetext"
     }
 ]
 

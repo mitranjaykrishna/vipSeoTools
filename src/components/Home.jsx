@@ -4,13 +4,15 @@ import HeroSection from "./HeroSection";
 import Services from "./Services";
 
 
+
 const Home=() =>{
     const { updateHomePage }=useGlobalContext();
-    useEffect(() => updateHomePage(),[]);
+    useEffect(() => updateHomePage());
     return (
         <>
             <HeroSection/>
-            <Services />            
+            <Services />  
+                      
         </>
     );
 };
