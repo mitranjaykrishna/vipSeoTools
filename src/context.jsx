@@ -1,5 +1,6 @@
-import React, { useContext, useReducer } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 import reducer from "./reducer";
+import ServicesData from "./ServicesData";
 
 const AppContext=React.createContext();
 
@@ -10,6 +11,7 @@ const initialState={
     groupButton1:"",
     groupButton2:"",
     pageImage:"",
+    services: [],
 }
 
 const AppProvider=({children})=>{
@@ -44,6 +46,16 @@ const AppProvider=({children})=>{
             },
         });
     };
+
+    const getServices=()=>
+    {
+        return dispatch({
+            type:"SERVICES_UPDATE",
+            payload:ServicesData,
+        });
+    }
+
+    useEffect(() => getServices(),[]);
     
     return (
         <AppContext.Provider value={{...state, updateHomePage, updateAboutPage}}>

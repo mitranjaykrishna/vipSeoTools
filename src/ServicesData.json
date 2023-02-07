@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "title": "Web Developer",
+        "image": "./images/error.svg",
+        "description": "My name is mitranjay krishna this software is for Photo editing"
+    },
+
+    {
+        "id":2,
+        "title": "yooooo",
+        "image": "./images/logo.png",
+        "description": "Yooo Yoooo Yooo"
+    }
+]
+

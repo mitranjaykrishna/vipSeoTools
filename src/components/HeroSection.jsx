@@ -1,7 +1,7 @@
 import React from "react";
-import Button from '@mui/material/Button';
 import styled from "styled-components";
 import { Box } from "@mui/system";
+import Button from '@mui/material/Button';
 import { ButtonGroup } from "@mui/material";
 import { useGlobalContext } from "../context";
 
@@ -106,12 +106,12 @@ const Wrapper= styled.section `
     }
 
     @keyframes MoveUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(30px);
-  }
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
 }
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {

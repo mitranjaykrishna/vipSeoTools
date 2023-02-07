@@ -95,7 +95,7 @@ li {
    grid-template-columns: 1fr 1.2fr .5fr .8fr ;
 }
 
-  .common-heading {
+.common-heading {
       font-size: 3.8rem;
       font-weight: 600;
       margin-bottom: 6rem;
@@ -110,7 +110,7 @@ li {
     text-transform: uppercase;
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
-    input[type="submit"]{
+input[type="submit"]{
     max-width: 16rem;
     margin-top: 2rem;
     background-color: ${({ theme }) => theme.colors.btn};
@@ -121,7 +121,7 @@ li {
     text-transform: uppercase;
     font-size: 1.8rem;
     cursor: pointer;
-    }
+}
 
 
 /* ===========================================

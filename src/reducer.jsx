@@ -31,6 +31,16 @@ const reducer = (state,action)=>{
 
     }
 
+    if(action.type === "SERVICES_UPDATE")
+    {
+
+        return {
+            ...state,
+            services: action.payload,
+
+        }
+    }
+
     return state;
 };
 
