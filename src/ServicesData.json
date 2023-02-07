@@ -1,16 +1,16 @@
 [
     {
         "id":1,
-        "title": "Web Developer",
-        "image": "./images/error.svg",
-        "description": "My name is mitranjay krishna this software is for Photo editing"
+        "title": "SpyFu",
+        "image": "./images/SpyFu.svg",
+        "description": "SpyFu is a competitive intelligence tool for SEO and PPC. You can type in a domain to see all of the keywords it ranks for (including the content that ranks), the ads it buys on Google, and its strongest competitors. You can also do deep keyword research."
     },
 
     {
         "id":2,
-        "title": "yooooo",
-        "image": "./images/logo.png",
-        "description": "Yooo Yoooo Yooo"
+        "title": "WordAi",
+        "image": "./images/wordai.png",
+        "description": "Use artificial intelligence to cut turnaround time, extend your budget, and create more high-quality content that Google and readers will love."
     }
 ]
 
