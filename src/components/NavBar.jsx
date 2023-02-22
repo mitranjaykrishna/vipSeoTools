@@ -29,9 +29,12 @@ const NavBar=() =>{
                         <li>
                             <Box>
                                 <ButtonGroup variant="outlined" aria-label="outlined button group" className="affiButtonG buttonEffect">
-                                    <Button><a href="https://access.vipseotools.com/login"><b>Login</b></a></Button>
-                                    <Button><a href="https://access.vipseotools.com/signup"><b>register</b></a></Button> 
-                                    <Button variant="contained" ><b>Join Affiliate</b></Button>       
+                                    {/* <Button><a href="https://access.vipseotools.com/login"><b>Login</b></a></Button> */}
+                                    <Button><NavLink exact activeClassName='active' to="https://access.vipseotools.com/login"><b>Login</b></NavLink></Button>
+                                    {/* <Button><a href="https://access.vipseotools.com/signup"><b>register</b></a></Button>  */}
+                                    <Button><NavLink exact activeClassName='active' to="https://access.vipseotools.com/signup"><b>register</b></NavLink></Button>
+                                    {/* <Button variant="contained" ><a href="https://access.vipseotools.com/aff/signup/" ><b className="join">Join Affiliate</b></a></Button>*/}
+                                    <Button variant="contained" ><NavLink exact activeClassName='active' to="https://access.vipseotools.com/aff/signup/"><b className="join">Join Affiliate</b></NavLink></Button>
                                 </ButtonGroup>
                             </Box>
                         </li>

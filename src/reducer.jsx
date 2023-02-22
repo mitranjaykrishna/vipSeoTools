@@ -10,7 +10,9 @@ const reducer = (state,action)=>{
             logoImage: action.payload.logoImage, 
             heroPara: action.payload.heroPara,
             groupButton1: action.payload.groupButton1,
+            link1:action.payload.link1,
             groupButton2: action.payload.groupButton2,
+            link2:action.payload.link2,
             pageImage: action.payload.pageImage,
         };
 
@@ -24,7 +26,9 @@ const reducer = (state,action)=>{
             logoImage: action.payload.logoImage, 
             heroPara: action.payload.heroPara,
             groupButton1: action.payload.groupButton1,
+            link1:action.payload.link1,
             groupButton2: action.payload.groupButton2,
+            link2:action.payload.link2,
             pageImage: action.payload.pageImage,
 
         };

@@ -4,12 +4,13 @@ import { Box } from "@mui/system";
 import Button from '@mui/material/Button';
 import { ButtonGroup } from "@mui/material";
 import { useGlobalContext } from "../context";
+import { NavLink } from "react-router-dom";
 
 const HeroSection=() =>
 {
 
-    const {heroTopData,logoImage,heroPara,groupButton1,groupButton2,pageImage}=useGlobalContext();
-    // console.log(name);
+    const {heroTopData,logoImage,heroPara,groupButton1,link1,groupButton2,link2,pageImage}=useGlobalContext();
+    // console.log(link1);
 
     return (
         <>
@@ -23,8 +24,8 @@ const HeroSection=() =>
                         <p className="hero-para">{heroPara}</p>
                         <Box>
                             <ButtonGroup variant="outlined" aria-label="outlined button group" className="buttonEffect">
-                                <Button className="btn logReg "><b>{groupButton1}</b></Button>
-                                <Button className="btn logReg" variant="contained"><b>{groupButton2}</b></Button>
+                                <Button className="btn logReg "><NavLink exact activeClassName="active" to={link1}><b>{groupButton1}</b></NavLink></Button>
+                                <Button className="btn logReg" variant="contained"><NavLink exact activeClassName='active' to={link2}><b className="button2">{groupButton2}</b></NavLink></Button>
                             </ButtonGroup>
                         </Box>
                     </div>
@@ -84,7 +85,12 @@ const Wrapper= styled.section `
     margin-top: 1.5rem;
     margin-bottom: 3.4rem;
     max-width: 60rem;
+    text-align: justify;
+    text-justify: inter-character;
     }
+    .button2{
+            color: white;
+        }
 
     .section-hero-image{
         display:flex;

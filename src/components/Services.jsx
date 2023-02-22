@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../context";
 
@@ -8,7 +8,12 @@ import { useGlobalContext } from "../context";
 const Services=() =>{
 
     const {services}=useGlobalContext();
-    console.log(services);
+    // console.log(services);
+    const [isReadMore, setReadMore]=useState(true);
+
+    const toggleOver=()=>{
+        setReadMore(!isReadMore);
+    }
     
 
 
@@ -16,21 +21,28 @@ const Services=() =>{
     return (
         <>
             <Wrapper className="section">
-                <h2 className="common-heading"> Our Servives</h2>
+                <h2 className="common-heading"> Our Services</h2>
                 <div className="container grid grid-three-column">
                     {
                         services.map((curElem) => {
-                            const {id, title, image, description} =curElem;
+                            const {id, title, price, description} =curElem;
                             return(
                                 <div key={id} className="card">
                                     <figure>
-                                        {/* <img src={image} alt={title} /> */}
-                                        <h1>{image}</h1>
+                                        <h1 className="price">{price}</h1>
                                     </figure>
                                     <div className="card-data">
                                         <h3>{title}</h3>
-                                        <p>{description}</p>
-                                        <Button className="btn">Subscribe</Button>
+
+
+                                        <p className="description">{isReadMore? description.slice(0,50):description}
+                                            <span onClick={toggleOver} className='read-or-hide'>
+                                                {isReadMore?" ...Read More": " ...Read Less"}
+                                            </span>
+                                        </p>
+
+
+                                        <Button className="btn"><a href="https://access.vipseotools.com/signup/" >Subscribe</a></Button>
                                     </div>
                                 </div>
                             );
@@ -45,7 +57,6 @@ const Services=() =>{
 
 const Wrapper = styled.section`
     padding: 9rem 0;
-    background-color: ${({theme}) => theme.colors.bg};
 
     .container{
         max-width: 120rem;
@@ -54,14 +65,22 @@ const Wrapper = styled.section`
 
     .card{
         border: 0.1rem solid rgb(170 170 170/40%);
+        
+
         .card-data{
             padding: 0 2rem;
+            
+        }
+        
+        h3{
+            margin: 3rem 0;
+            font-weight: 510;
+            font-size: 2.4rem;
         }
 
-        h3{
-            margin: 2rem 0;
-            font-weight: 300;
-            font-size: 2.4rem;
+        .description{
+            text-align: justify;
+            text-justify: inter-character;
         }
 
         .btn{
@@ -90,6 +109,11 @@ const Wrapper = styled.section`
         position: relative;
         overflow: hidden;
         transition: all 0.5s linear;
+        
+        
+        .price{
+            color: #1e9affef;;
+        }
 
         &::after{
             content: "";
@@ -98,7 +122,7 @@ const Wrapper = styled.section`
             left:0;
             width: 0%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #1e9aff61;
             transition: all 0.2s linear;
             cursor: pointer;
         }
@@ -106,6 +130,7 @@ const Wrapper = styled.section`
         &:hover::after{
             width:100%
         }
+        
 
         &:hover img{
             transform: scale(1,2);
@@ -118,6 +143,18 @@ const Wrapper = styled.section`
             transition: all 0.2s linear;
         }
     }
+    a:link, a:visited{
+    color: rgb(98 84 243);
+
+    &:hover{
+        color: #fff;
+    }
+    
+    }
+    .read-or-hide{
+    color: ${({theme})=> theme.colors.helper};
+    cursor: pointer;
+}
 
 `;
 
