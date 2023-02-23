@@ -74,8 +74,9 @@ const Wrapper = styled.section`
         
         h3{
             margin: 3rem 0;
-            font-weight: 510;
-            font-size: 2.4rem;
+            font-weight: 700;
+            font-size: 3rem;
+            color:  rgb(98 84 243);
         }
 
         .description{
@@ -97,6 +98,8 @@ const Wrapper = styled.section`
                 background-color: rgb(98 84 243);
                 color: #fff;
             }
+
+            
 
         }
     }
