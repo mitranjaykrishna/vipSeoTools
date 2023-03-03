@@ -71,7 +71,7 @@ const Wrapper= styled.section `
     text-decoration: underline;
     transform: scale(0.96);
     transition: 0.3s ease-in-out;
-}
+    }
 
 
     .hero-top-data{

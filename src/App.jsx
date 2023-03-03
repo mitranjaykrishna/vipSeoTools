@@ -7,6 +7,7 @@ import Contact from "./components/Contact"
 import Services from "./components/Services";
 import Home from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
+import Footer from "./components/Footer";
 
 const App=()=>{
 
@@ -44,6 +45,7 @@ const App=()=>{
                         <Route exact path='/contact' element={<Contact />}/>
                         {/* <Redirect to="/" /> */}
                     </Routes>
+                    <Footer />
                 </BrowserRouter>
             </ThemeProvider>
         </>

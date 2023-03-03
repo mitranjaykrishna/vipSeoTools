@@ -65,6 +65,9 @@ const Wrapper = styled.section`
 
     .card{
         border: 0.1rem solid rgb(170 170 170/40%);
+        background-color: ${({theme})=> theme.colors.bg};
+        border-radius: 1rem;
+        box-shadow: ${({theme}) => theme.colors.shadowSupport};
         
 
         .card-data{

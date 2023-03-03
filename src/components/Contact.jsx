@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Button } from "@mui/material";
 
 
 const Contact=() =>{
@@ -10,6 +11,9 @@ const Contact=() =>{
         .container{
             margin-top: 6rem;
             text-align: center;
+            background-color: ${({theme})=> theme.colors.bg};
+            border-radius: 1rem;
+            box-shadow: ${({theme}) => theme.colors.shadowSupport};
 
             .contact-form{
                 max-width:50rem;
@@ -23,6 +27,24 @@ const Contact=() =>{
                 
                 
             }
+
+            .btn{
+                max-width: 100%;
+            }
+
+            .logReg{
+                
+                font-size: 1.5rem;
+            }
+
+            button:hover{
+            text-decoration: underline;
+            transform: scale(0.96);
+            transition: 0.3s ease-in-out;
+            }
+
+            
+            
         }
     `;
     return (
@@ -68,7 +90,7 @@ const Contact=() =>{
                         >                        
                         </textarea>  
 
-                        <input type="submit" value="submit" />                  
+                        <Button className="btn logReg" type="submit" variant="contained">Submit</Button>                  
                     </form>
                 </div>
 
