@@ -66,7 +66,7 @@ const Footer =()=>{
             {/* 4th col */}
             <div className='footer-contact'>
                 <h3 className='footer-contact-heading'> Contact Us</h3>
-                <h3>Address- 54 3rd floor, Rolex Apartments, Lucknow, UP 226016</h3>
+                <p>Address- 54 3rd floor, Rolex Apartments, Lucknow, UP 226016</p>
             </div>
         </div>
 
